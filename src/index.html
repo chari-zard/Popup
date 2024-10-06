@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <style>
+    .popup {
+        transition: transform 0.4s, top 0.4s; 
+    }
+</style>
+</head>
+<body class="m-0 p-0 font-[poppins,'sans-serif']">
+    <div class="outer w-full h-[100vh] bg-[#0D3C68] flex justify-center items-center">
+        <button id="btn" type="submit" class="bg-[#68390d] text-[#0D3C68] py-[10px]  px-8 text-lg font-medium border-0 rounded-3xl cursor-pointer outline-none">Submit</button>
+
+        <div class="popup absolute text-center bg-white rounded-2xl w-[400px] h-[350px] shadow-xl top-[-20%] scale-[0.1] hidden">
+
+            <img class="mt-[-50px] ml-[138px] w-28  " src="tick.webp">
+            <h1 class="font-bold text-3xl pb-3">Successful!</h1>
+            <p class="pb-3 text-lg">Your application has been Successfuly received <br>Thank You!</p>
+            <button id="ok" class="bg-[#00CC00] mt-12 py-2 w-[90%]  rounded-2xl text-white">Ok</button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
